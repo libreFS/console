@@ -1,8 +1,8 @@
-# MinIO Console
+# libreFS Console
 
-![build](https://github.com/minio/console/workflows/Go/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
+![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
 
-A graphical user interface for [MinIO](https://github.com/minio/minio)
+A graphical user interface for [libreFS](https://github.com/libreFS/libreFS) — forked from `minio/console@v1.7.6` (the last open-source release before the repo was deleted).
 
 | Object Browser                     | Dashboard                     | Creating a bucket             |
 |------------------------------------|-------------------------------|-------------------------------|
@@ -11,7 +11,7 @@ A graphical user interface for [MinIO](https://github.com/minio/minio)
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [MinIO Console](#minio-console)
+- [libreFS Console](#librefs-console)
   - [Install](#install)
     - [Build from source](#build-from-source)
   - [Setup](#setup)
@@ -25,7 +25,7 @@ A graphical user interface for [MinIO](https://github.com/minio/minio)
 
 <!-- markdown-toc end -->
 
-MinIO Console is a library that provides a management and browser UI overlay for the MinIO Server.
+libreFS Console is a library that provides a management and browser UI overlay for the libreFS Server.
 
 ## Setup
 
