@@ -1,0 +1,14 @@
+FROM golang:1.26-bookworm
+
+# Install Node 18 (matches .nvmrc)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs && \
+    npm install -g corepack && \
+    corepack enable && \
+    corepack prepare yarn@stable --activate
+
+# Install golangci-lint
+RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | \
+    sh -s -- -b /usr/local/bin
+
+WORKDIR /app

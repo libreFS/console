@@ -1,0 +1,58 @@
+# Makefile.docker — Docker-based development wrapper for libreFS Console
+# All dev tasks run inside Docker. No Go or Node toolchain required on the host.
+#
+# Quick start:
+#   make -f Makefile.docker image     — build the dev Docker image (required once)
+#   make -f Makefile.docker build     — compile the Go console binary
+#   make -f Makefile.docker assets    — build the React frontend
+#   make -f Makefile.docker test      — run Go API unit tests
+#   make -f Makefile.docker typecheck — TypeScript type-check the frontend
+#   make -f Makefile.docker lint      — run Go linters (golangci-lint + gofmt)
+#   make -f Makefile.docker clean     — remove build artifacts
+
+DEV_IMAGE    ?= librefs-console-dev:latest
+GOMODCACHE   ?= $(HOME)/go/pkg/mod
+YARNCACHE    ?= $(HOME)/.cache/yarn
+
+DOCKER_RUN := docker run --rm \
+	-v "$(CURDIR)":/app \
+	-v "$(GOMODCACHE)":/root/go/pkg/mod \
+	-e GOPATH=/root/go \
+	-w /app \
+	$(DEV_IMAGE)
+
+.PHONY: all image build assets test typecheck lint clean help
+
+all: build
+
+image: ## build the dev Docker image (Dockerfile.dev)
+	docker build -t $(DEV_IMAGE) -f Dockerfile.dev .
+
+build: ## compile the Go console binary (inside Docker)
+	$(DOCKER_RUN) make console
+
+assets: ## build the React frontend (inside Docker)
+	docker run --rm \
+		-v "$(CURDIR)":/app \
+		-v "$(YARNCACHE)":/root/.cache/yarn \
+		-w /app \
+		$(DEV_IMAGE) bash -c "cd web-app && corepack enable && yarn install --prefer-offline && yarn build"
+
+test: ## run Go API unit tests (inside Docker)
+	$(DOCKER_RUN) make test
+
+typecheck: ## TypeScript type-check the frontend (inside Docker)
+	docker run --rm \
+		-v "$(CURDIR)":/app \
+		-v "$(YARNCACHE)":/root/.cache/yarn \
+		-w /app \
+		$(DEV_IMAGE) bash -c "cd web-app && corepack enable && yarn install && yarn tsc --noEmit"
+
+lint: ## run Go linters — golangci-lint + gofmt (inside Docker)
+	$(DOCKER_RUN) make verifiers
+
+clean: ## remove build artifacts (inside Docker)
+	$(DOCKER_RUN) make clean
+
+help: ## print this help
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile.docker | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'

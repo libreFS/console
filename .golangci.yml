@@ -1,7 +1,6 @@
-linters-settings:
-  golint:
-    min-confidence: 0
+version: "2"
 
+linters-settings:
   misspell:
     locale: US
 
@@ -11,26 +10,24 @@ linters-settings:
         copyright-holder: Copyright \(c\) (20\d\d\-20\d\d)|2021|({{year}})
     template-path: .license.tmpl
 
+formatters:
+  enable:
+    - goimports
+    - gofmt
+    - gofumpt
+
 linters:
   disable-all: true
   enable:
-    - goimports
     - misspell
     - govet
     - revive
     - ineffassign
-    - gosimple
     - gomodguard
-    - gofmt
-    - unused
     - staticcheck
     - unconvert
     - gocritic
-    - gofumpt
     - durationcheck
-
-service:
-  golangci-lint-version: 1.43.0 # use the fixed version to not introduce new linters unexpectedly
 
 issues:
   exclude-use-default: false
