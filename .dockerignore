@@ -1,0 +1,7 @@
+web-app/node_modules
+web-app/.yarn
+Dockerfile.dev
+Makefile.docker
+.git
+.github
+*.md
