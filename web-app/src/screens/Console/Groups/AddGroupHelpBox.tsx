@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -86,7 +86,7 @@ const AddGroupHelpBox = () => {
         <Box sx={{ paddingTop: "10px", paddingBottom: "10px" }}>
           Groups provide a simplified method for managing shared permissions
           among users with common access patterns and workloads. Client’s cannot
-          authenticate to a MinIO deployment using a group as an identity.
+          authenticate to a libreFS deployment using a group as an identity.
         </Box>
       </Box>
 

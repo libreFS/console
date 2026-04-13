@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -19,7 +19,7 @@ import { IBytesCalc, IErasureCodeCalc, IStorageFactors } from "./types";
 
 import get from "lodash/get";
 
-const minMemReq = 2147483648; // Minimal Memory required for MinIO in bytes
+const minMemReq = 2147483648; // Minimal Memory required for libreFS in bytes
 
 export const units = [
   "B",

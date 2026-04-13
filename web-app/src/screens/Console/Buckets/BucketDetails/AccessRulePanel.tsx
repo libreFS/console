@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -199,7 +199,7 @@ const AccessRule = () => {
             <Fragment>
               Setting an{" "}
               <a
-                href="https://min.io/docs/minio/linux/reference/minio-mc/mc-anonymous-set.html"
+                href="https://librefs.org/docs/"
                 target="blank"
               >
                 Anonymous

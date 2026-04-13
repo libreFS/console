@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -333,7 +333,7 @@ const BasicDashboard = ({ usage }: IDashboardProps) => {
                       fontSize: "14px",
                     }}
                   >
-                    MinIO Dashboard will display basic metrics as we couldn’t
+                    libreFS Dashboard will display basic metrics as we couldn’t
                     connect to Prometheus successfully. Please try again in a
                     few minutes. If the problem persists, you can review your
                     configuration and confirm that Prometheus server is up and
@@ -346,7 +346,7 @@ const BasicDashboard = ({ usage }: IDashboardProps) => {
                     }}
                   >
                     <a
-                      href="https://min.io/docs/minio/linux/operations/monitoring/collect-minio-metrics-using-prometheus.html"
+                      href="https://librefs.org/docs/"
                       target="_blank"
                       rel="noopener"
                     >

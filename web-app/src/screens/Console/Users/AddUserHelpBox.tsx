@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -81,10 +81,10 @@ const AddUserHelpBox = () => {
         <div>Learn more about the Users feature</div>
       </Box>
       <Box sx={{ fontSize: "14px", marginBottom: "15px" }}>
-        A MinIO user consists of a unique access key (username) and
+        A libreFS user consists of a unique access key (username) and
         corresponding secret key (password). Clients must authenticate their
         identity by specifying both a valid access key (username) and the
-        corresponding secret key (password) of an existing MinIO user.
+        corresponding secret key (password) of an existing libreFS user.
         <br />
         <br />
         Each user can have one or more assigned policies that explicitly list

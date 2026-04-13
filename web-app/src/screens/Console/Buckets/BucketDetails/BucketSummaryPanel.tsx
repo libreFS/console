@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -485,16 +485,16 @@ const BucketSummary = () => {
                     isLoading={loadingEncryption}
                     helpTip={
                       <Fragment>
-                        MinIO supports enabling automatic{" "}
+                        libreFS supports enabling automatic{" "}
                         <a
-                          href="https://min.io/docs/minio/kubernetes/upstream/administration/server-side-encryption/server-side-encryption-sse-kms.html"
+                          href="https://librefs.org/docs/"
                           target="blank"
                         >
                           SSE-KMS
                         </a>{" "}
                         and{" "}
                         <a
-                          href="https://min.io/docs/minio/kubernetes/upstream/administration/server-side-encryption/server-side-encryption-sse-s3.html"
+                          href="https://librefs.org/docs/"
                           target="blank"
                         >
                           SSE-S3
@@ -570,12 +570,12 @@ const BucketSummary = () => {
                     <Fragment>
                       Setting a{" "}
                       <a
-                        href="https://min.io/docs/minio/linux/reference/minio-mc/mc-quota-set.html"
+                        href="https://librefs.org/docs/"
                         target="blank"
                       >
                         quota
                       </a>{" "}
-                      assigns a hard limit to a bucket beyond which MinIO does
+                      assigns a hard limit to a bucket beyond which libreFS does
                       not allow writes.
                     </Fragment>
                   }
@@ -673,10 +673,10 @@ const BucketSummary = () => {
                     isLoading={loadingRetention}
                     helpTip={
                       <Fragment>
-                        MinIO{" "}
+                        libreFS{" "}
                         <a
                           target="blank"
-                          href="https://min.io/docs/minio/macos/administration/object-management.html#object-retention"
+                          href="https://librefs.org/docs/"
                         >
                           Object Locking
                         </a>{" "}

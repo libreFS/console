@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2023 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2023 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -45,17 +45,17 @@ const LicenseFAQ = () => {
         license certified by the{" "}
         {makeLink("Free Software Foundation", "https://www.fsf.org/")} and the
         Open Source Initiative. You can get a copy of the GNU AGPL v3 license
-        with MinIO source code or at{" "}
+        with libreFS source code or at{" "}
         {makeLink(
           "https://www.gnu.org/licenses/agpl-3.0.en.html",
-          "https://min.io/compliance?ref=con",
+          "https://librefs.org/",
         )}
         .
       </p>
       <h2>What does it mean for me to comply with the GNU AGPL v3?</h2>
       <p>
-        When you host or distribute MinIO over a network, the AGPL v3 applies to
-        you. Any distribution or copying of MinIO software modified or not has
+        When you host or distribute libreFS over a network, the AGPL v3 applies to
+        you. Any distribution or copying of libreFS software modified or not has
         to comply with the obligations specified in the AGPL v3 license. You
         must include the source code, full license text and the original
         copyright notice along with the object code.
@@ -69,13 +69,13 @@ const LicenseFAQ = () => {
         )}{" "}
         of the GNU AGPL v3 license.
       </p>
-      <h2>Making combined or derivative works of MinIO</h2>
+      <h2>Making combined or derivative works of libreFS</h2>
       <p>
-        Creating combined or derivative works of MinIO requires all such works
+        Creating combined or derivative works of libreFS requires all such works
         to be released under the same license.
       </p>
       <p>
-        If MinIO source code is included in the same executable file, they are
+        If libreFS source code is included in the same executable file, they are
         definitely combined in one program. If modules are designed to run
         linked together in a shared address space, that almost surely means
         combining them into one program.
@@ -91,7 +91,7 @@ const LicenseFAQ = () => {
       </p>
 
       <p>
-        Merely aggregating MinIO software into your distribution does not
+        Merely aggregating libreFS software into your distribution does not
         constitute derivative works. For more information, please refer to the{" "}
         {makeLink(
           "GPL FAQ",
@@ -104,8 +104,8 @@ const LicenseFAQ = () => {
       <h2>Talking to your Legal Counsel</h2>
       <p>
         If you have questions, we recommend that you talk to your own attorney
-        for legal advice. Purchasing a commercial license from MinIO removes the
-        GNU AGPL v3 obligations from MinIO software.
+        for legal advice. Purchasing a commercial license from libreFS removes the
+        GNU AGPL v3 obligations from libreFS software.
       </p>
     </Fragment>
   );

@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -106,7 +106,7 @@ const AddUserServiceAccountHelpBox = () => {
           </Box>
           <Box sx={{ paddingTop: "10px" }}>
             Access Keys support programmatic access by applications. You cannot
-            use a Access Key to log into the MinIO Console.
+            use a Access Key to log into the libreFS Console.
           </Box>
         </Box>
         <Box sx={{ paddingBottom: "20px" }}>

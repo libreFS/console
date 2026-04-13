@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -141,17 +141,17 @@ const SetRetentionConfig = ({
                 <Fragment>
                   {" "}
                   <a
-                    href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#minio-object-locking-compliance"
+                    href="https://librefs.org/docs/"
                     target="blank"
                   >
                     Compliance
                   </a>{" "}
                   lock protects Objects from write operations by all users,
-                  including the MinIO root user.
+                  including the libreFS root user.
                   <br />
                   <br />
                   <a
-                    href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#minio-object-locking-governance"
+                    href="https://librefs.org/docs/"
                     target="blank"
                   >
                     Governance

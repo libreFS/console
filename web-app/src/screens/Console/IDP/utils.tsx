@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -18,17 +18,17 @@ import { LockIcon, LoginIcon } from "mds";
 
 export const ldapHelpBoxContents = [
   {
-    text: "MinIO supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing MinIO.",
+    text: "libreFS supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing libreFS.",
     icon: <LoginIcon />,
     iconDescription: "Create Configurations",
   },
   {
-    text: "MinIO queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. MinIO supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries",
+    text: "libreFS queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. libreFS supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries",
     icon: null,
     iconDescription: "",
   },
   {
-    text: "MinIO recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.",
+    text: "libreFS recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.",
     icon: null,
     iconDescription: "",
   },
@@ -36,12 +36,12 @@ export const ldapHelpBoxContents = [
 
 export const openIDHelpBoxContents = [
   {
-    text: "MinIO supports using an OpenID Connect (OIDC) compatible IDentity Provider (IDP) such as Okta, KeyCloak, Dex, Google, or Facebook for external management of user identities.",
+    text: "libreFS supports using an OpenID Connect (OIDC) compatible IDentity Provider (IDP) such as Okta, KeyCloak, Dex, Google, or Facebook for external management of user identities.",
     icon: <LockIcon />,
     iconDescription: "Create Configurations",
   },
   {
-    text: "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing MinIO.",
+    text: "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing libreFS.",
     icon: null,
     iconDescription: "",
   },
@@ -85,7 +85,7 @@ export const openIDFormFields = {
   claim_name: {
     required: false,
     label: "Claim Name",
-    tooltip: "Claim from which MinIO will read the policy or role to use",
+    tooltip: "Claim from which libreFS will read the policy or role to use",
     placeholder: "Enter Claim Name",
     type: "text",
     hasError: (s: string, editMode: boolean) => "",

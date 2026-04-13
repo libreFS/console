@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -64,7 +64,7 @@ export const usageClarifyingContent = (
       Running{" "}
       <a
         target="_blank"
-        href="https://min.io/docs/minio/linux/reference/minio-mc/mc-du.html"
+        href="https://librefs.org/docs/"
       >
         mc du
       </a>{" "}

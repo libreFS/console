@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -130,7 +130,7 @@ const ChangePassword = ({ open, closeModal }: IChangePasswordProps) => {
             <a
               target="_blank"
               rel="noopener"
-              href="https://min.io/docs/minio/linux/administration/identity-access-management/minio-user-management.html#id4?ref=con"
+              href="https://librefs.org/docs/"
             >
               rotating
             </a>{" "}

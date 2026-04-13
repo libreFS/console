@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -24,9 +24,9 @@ const NotificationEndpointTypeSelectorHelpBox = () => {
       title={"What are Event Destinations?"}
       help={
         <Box sx={{ paddingTop: "20px" }}>
-          MinIO bucket notifications allow administrators to send notifications
+          libreFS bucket notifications allow administrators to send notifications
           to supported external services on certain object or bucket events.
-          MinIO supports bucket and object-level S3 events similar to the Amazon
+          libreFS supports bucket and object-level S3 events similar to the Amazon
           S3 Event Notifications.
         </Box>
       }

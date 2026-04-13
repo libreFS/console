@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -241,7 +241,7 @@ const AddBucket = () => {
               title={"Buckets"}
               help={
                 <Fragment>
-                  MinIO uses buckets to organize objects. A bucket is similar to
+                  libreFS uses buckets to organize objects. A bucket is similar to
                   a folder or directory in a filesystem, where each bucket can
                   hold an arbitrary number of objects.
                   <br />
@@ -294,7 +294,7 @@ const AddBucket = () => {
                       <br />
                       Please deploy a server in{" "}
                       <a
-                        href="https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-multi-node-multi-drive.html?ref=con"
+                        href="https://librefs.org/docs/"
                         target="_blank"
                         rel="noopener"
                       >
@@ -364,9 +364,9 @@ const AddBucket = () => {
                           be disabled <br />
                         </strong>
                       )}
-                      MinIO supports keeping multiple{" "}
+                      libreFS supports keeping multiple{" "}
                       <a
-                        href="https://min.io/docs/minio/kubernetes/upstream/administration/object-management/object-versioning.html#minio-bucket-versioning"
+                        href="https://librefs.org/docs/"
                         target="blank"
                       >
                         versions
@@ -375,14 +375,14 @@ const AddBucket = () => {
                       <br />
                       Versioning is required to enable{" "}
                       <a
-                        href="https://min.io/docs/minio/macos/administration/object-management.html#object-retention"
+                        href="https://librefs.org/docs/"
                         target="blank"
                       >
                         Object Locking
                       </a>{" "}
                       and{" "}
                       <a
-                        href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#object-retention-modes"
+                        href="https://librefs.org/docs/"
                         target="blank"
                       >
                         Retention
@@ -405,12 +405,12 @@ const AddBucket = () => {
                       helpTip={
                         <Fragment>
                           You can choose to{" "}
-                          <a href="https://min.io/docs/minio/windows/administration/object-management/object-versioning.html#exclude-folders-from-versioning">
+                          <a href="https://librefs.org/docs/">
                             exclude folders and prefixes
                           </a>{" "}
                           from versioning if Object Locking is not enabled.
                           <br />
-                          MinIO requires versioning to support replication.
+                          libreFS requires versioning to support replication.
                           <br />
                           Objects in excluded prefixes do not replicate to any
                           peer site or remote site.
@@ -474,7 +474,7 @@ const AddBucket = () => {
                       )}
                       You can only enable{" "}
                       <a
-                        href="https://min.io/docs/minio/macos/administration/object-management.html#object-retention"
+                        href="https://librefs.org/docs/"
                         target="blank"
                       >
                         Object Locking
@@ -482,7 +482,7 @@ const AddBucket = () => {
                       when first creating a bucket.
                       <br />
                       <br />
-                      <a href="https://min.io/docs/minio/windows/administration/object-management/object-versioning.html#exclude-folders-from-versioning">
+                      <a href="https://librefs.org/docs/">
                         Exclude folders and prefixes
                       </a>{" "}
                       options will not be available if this option is enabled.
@@ -504,12 +504,12 @@ const AddBucket = () => {
                     <Fragment>
                       Setting a{" "}
                       <a
-                        href="https://min.io/docs/minio/linux/reference/minio-mc/mc-quota-set.html"
+                        href="https://librefs.org/docs/"
                         target="blank"
                       >
                         quota
                       </a>{" "}
-                      assigns a hard limit to a bucket beyond which MinIO does
+                      assigns a hard limit to a bucket beyond which libreFS does
                       not allow writes.
                     </Fragment>
                   }
@@ -559,9 +559,9 @@ const AddBucket = () => {
                     label={"Retention"}
                     helpTip={
                       <Fragment>
-                        MinIO supports setting both{" "}
+                        libreFS supports setting both{" "}
                         <a
-                          href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#configure-bucket-default-object-retention"
+                          href="https://librefs.org/docs/"
                           target="blank"
                         >
                           bucket-default
@@ -598,17 +598,17 @@ const AddBucket = () => {
                         <Fragment>
                           {" "}
                           <a
-                            href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#minio-object-locking-compliance"
+                            href="https://librefs.org/docs/"
                             target="blank"
                           >
                             Compliance
                           </a>{" "}
                           lock protects Objects from write operations by all
-                          users, including the MinIO root user.
+                          users, including the libreFS root user.
                           <br />
                           <br />
                           <a
-                            href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#minio-object-locking-governance"
+                            href="https://librefs.org/docs/"
                             target="blank"
                           >
                             Governance

@@ -1,4 +1,4 @@
-// Copyright (c) 2021 MinIO, Inc.
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -536,7 +536,7 @@ const PolicyDetails = () => {
                           <Fragment>
                             <a
                               target="blank"
-                              href="https://min.io/docs/minio/kubernetes/upstream/administration/identity-access-management/policy-based-access-control.html#policy-document-structure"
+                              href="https://librefs.org/docs/"
                             >
                               Guide to access policy structure
                             </a>
@@ -567,7 +567,7 @@ const PolicyDetails = () => {
                                 <Fragment>
                                   <a
                                     target="blank"
-                                    href="https://min.io/docs/minio/kubernetes/upstream/administration/identity-access-management/policy-based-access-control.html#policy-document-structure"
+                                    href="https://librefs.org/docs/"
                                   >
                                     Guide to access policy structure
                                   </a>

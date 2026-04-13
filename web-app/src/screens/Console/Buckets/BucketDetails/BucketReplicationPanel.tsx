@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -314,10 +314,10 @@ const BucketReplicationPanel = () => {
         <HelpTip
           content={
             <Fragment>
-              MinIO{" "}
+              libreFS{" "}
               <a
                 target="blank"
-                href="https://min.io/docs/minio/kubernetes/upstream/administration/bucket-replication.html"
+                href="https://librefs.org/docs/"
               >
                 server-side bucket replication
               </a>{" "}
@@ -386,13 +386,13 @@ const BucketReplicationPanel = () => {
             iconComponent={<BucketsIcon />}
             help={
               <Fragment>
-                MinIO supports server-side and client-side replication of
+                libreFS supports server-side and client-side replication of
                 objects between source and destination buckets.
                 <br />
                 <br />
                 You can learn more at our{" "}
                 <a
-                  href="https://min.io/docs/minio/linux/administration/bucket-replication.html?ref=con"
+                  href="https://librefs.org/docs/"
                   target="_blank"
                   rel="noopener"
                 >

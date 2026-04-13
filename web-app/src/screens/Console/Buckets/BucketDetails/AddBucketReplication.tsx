@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2023 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2023 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -195,19 +195,19 @@ const AddBucketReplication = () => {
                     while the configured remote deployment acts as the “target”.
                   </Box>
                   <Box sx={{ paddingTop: "10px" }}>
-                    For each write operation to this "source" bucket, MinIO
+                    For each write operation to this "source" bucket, libreFS
                     checks all configured replication rules and applies the
                     matching rule with highest configured priority.
                   </Box>
                   <Box sx={{ paddingTop: "10px" }}>
-                    MinIO supports automatically replicating existing objects in
+                    libreFS supports automatically replicating existing objects in
                     a bucket; this setting is enabled by default. Please note
                     that objects created before replication was configured or
                     while replication is disabled are not synchronized to the
                     target deployment in case this setting is not enabled.
                   </Box>
                   <Box sx={{ paddingTop: "10px" }}>
-                    MinIO supports replicating delete operations, where MinIO
+                    libreFS supports replicating delete operations, where libreFS
                     synchronizes deleting specific object versions and new
                     delete markers. Delete operation replication uses the same
                     replication process as all other replication operations.
@@ -245,7 +245,7 @@ const AddBucketReplication = () => {
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 setTargetURL(e.target.value);
               }}
-              placeholder="play.min.io"
+              placeholder="play.librefs.org"
               label="Target URL"
               value={targetURL}
             />

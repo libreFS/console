@@ -1432,7 +1432,7 @@ export class HttpClient<SecurityDataType = unknown> {
 }
 
 /**
- * @title MinIO Console Server
+ * @title libreFS Console Server
  * @version 0.1.0
  * @baseUrl /api/v1
  */
@@ -3492,7 +3492,7 @@ export class Api<
      *
      * @tags Configuration
      * @name ExportConfig
-     * @summary Export the current config from MinIO server
+     * @summary Export the current config from libreFS server
      * @request GET:/configs/export
      * @secure
      */
@@ -3510,7 +3510,7 @@ export class Api<
      *
      * @tags Configuration
      * @name ImportCreate
-     * @summary Uploads a file to import MinIO server config.
+     * @summary Uploads a file to import libreFS server config.
      * @request POST:/configs/import
      * @secure
      */

@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -333,12 +333,12 @@ const Groups = () => {
                           A group can have one attached IAM policy, where all
                           users with membership in that group inherit that
                           policy. Groups support more simplified management of
-                          user permissions on the MinIO Tenant.
+                          user permissions on the libreFS Tenant.
                           <br />
                           <br />
                           You can learn more at our{" "}
                           <a
-                            href="https://min.io/docs/minio/linux/administration/identity-access-management/minio-group-management.html?ref=con"
+                            href="https://librefs.org/docs/"
                             target="_blank"
                             rel="noopener"
                           >
@@ -362,7 +362,7 @@ const Groups = () => {
                           A group can have one attached IAM policy, where all
                           users with membership in that group inherit that
                           policy. Groups support more simplified management of
-                          user permissions on the MinIO Tenant.
+                          user permissions on the libreFS Tenant.
                           <SecureComponent
                             resource={CONSOLE_UI_RESOURCE}
                             scopes={createGroupPermissions}

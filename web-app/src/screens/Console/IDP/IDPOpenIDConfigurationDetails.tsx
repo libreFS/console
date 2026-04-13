@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -33,7 +33,7 @@ const IDPOpenIDConfigurationDetails = () => {
           helpText={"Learn more about OpenID Connect Configurations"}
           contents={openIDHelpBoxContents}
           docLink={
-            "https://min.io/docs/minio/linux/operations/external-iam.html?ref=con#minio-external-iam-oidc"
+            "https://librefs.org/docs/"
           }
           docText={"Learn more about OpenID Connect Configurations"}
         />

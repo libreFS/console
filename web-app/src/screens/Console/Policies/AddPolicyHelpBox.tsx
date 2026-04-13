@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -82,19 +82,19 @@ const AddPolicyHelpBox = () => {
             description={`Create Policies`}
           />
           <Box sx={{ paddingTop: "20px" }}>
-            MinIO uses Policy-Based Access Control (PBAC) to define the
+            libreFS uses Policy-Based Access Control (PBAC) to define the
             authorized actions and resources to which an authenticated user has
             access. Each policy describes one or more actions and conditions
             that outline the permissions of a user or group of users.{" "}
           </Box>
         </Box>
         <Box sx={{ paddingBottom: "20px" }}>
-          MinIO PBAC is built for compatibility with AWS IAM policy syntax,
+          libreFS PBAC is built for compatibility with AWS IAM policy syntax,
           structure, and behavior.
         </Box>
         <Box sx={{ paddingBottom: "20px" }}>
           Each user can access only those resources and operations which are
-          explicitly granted by the built-in role. MinIO denies access to any
+          explicitly granted by the built-in role. libreFS denies access to any
           other resource or action by default.
         </Box>
       </Box>

@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -295,8 +295,8 @@ const Account = () => {
               iconComponent={<AccountIcon />}
               help={
                 <Fragment>
-                  MinIO access keys are child identities of an authenticated
-                  MinIO user, including externally managed identities. Each
+                  libreFS access keys are child identities of an authenticated
+                  libreFS user, including externally managed identities. Each
                   access key inherits its privileges based on the policies
                   attached to it’s parent user or those groups in which the
                   parent user has membership. Access Keys also support an
@@ -306,7 +306,7 @@ const Account = () => {
                   <br />
                   You can learn more at our{" "}
                   <a
-                    href="https://min.io/docs/minio/linux/administration/identity-access-management/minio-user-management.html?ref=con#id3"
+                    href="https://librefs.org/docs/"
                     target="_blank"
                     rel="noopener"
                   >

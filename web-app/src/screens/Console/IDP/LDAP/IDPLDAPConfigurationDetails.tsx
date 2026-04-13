@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2023 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2023 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -310,7 +310,7 @@ const IDPLDAPConfigurationDetails = () => {
                           <Tooltip
                             tooltip={
                               envOverride
-                                ? "Configuration cannot be edited in this module as LDAP environment variables are set for this MinIO instance."
+                                ? "Configuration cannot be edited in this module as LDAP environment variables are set for this libreFS instance."
                                 : ""
                             }
                           >
@@ -328,7 +328,7 @@ const IDPLDAPConfigurationDetails = () => {
                             <Tooltip
                               tooltip={
                                 envOverride
-                                  ? "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this MinIO instance."
+                                  ? "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this libreFS instance."
                                   : ""
                               }
                             >
@@ -376,7 +376,7 @@ const IDPLDAPConfigurationDetails = () => {
                                 }
                                 contents={ldapHelpBoxContents}
                                 docLink={
-                                  "https://min.io/docs/minio/linux/operations/external-iam.html?ref=con#minio-external-iam-ad-ldap"
+                                  "https://librefs.org/docs/"
                                 }
                                 docText={"Learn more about LDAP Configurations"}
                               />

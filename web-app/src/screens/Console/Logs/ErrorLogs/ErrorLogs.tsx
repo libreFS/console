@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -215,7 +215,7 @@ const ErrorLogs = () => {
                 { value: "all", label: "All Log Types" },
                 {
                   value: "minio",
-                  label: "MinIO",
+                  label: "libreFS",
                 },
                 { value: "application", label: "Application" },
               ]}
