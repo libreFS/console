@@ -25,10 +25,11 @@ jobs:
           cache: true
 
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v7
         with:
-          version: v2.11.4   # v2 required — go.mod uses toolchain go1.26.0
+          version: v2.11.4
           args: --timeout=5m --config .golangci.yml
+          only-new-issues: true
 
   # ── Go tests ─────────────────────────────────────────────────────────────
   go-test:
