@@ -11785,9 +11785,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mds@https://github.com/minio/mds.git#v1.0.4":
+"mds@https://github.com/libreFS/mds.git#v1.0.4":
   version: 1.0.4
-  resolution: "mds@https://github.com/minio/mds.git#commit=027fb7f9834e2bd6daba7f62a9d04d9a3606fbe1"
+  resolution: "mds@https://github.com/libreFS/mds.git#commit=027fb7f9834e2bd6daba7f62a9d04d9a3606fbe1"
   dependencies:
     "@storybook/test": "npm:^8.2.4"
     "@types/styled-components": "npm:^5.1.34"
@@ -18222,7 +18222,7 @@ __metadata:
     local-storage-fallback: "npm:^4.1.2"
     lodash: "npm:^4.17.21"
     luxon: "npm:^3.4.4"
-    mds: "https://github.com/minio/mds.git#v1.0.4"
+    mds: "https://github.com/libreFS/mds.git#v1.0.4"
     minio: "npm:^8.0.1"
     nyc: "npm:^15.1.0"
     prettier: "npm:3.3.3"

@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -18,7 +18,12 @@ import React from "react";
 
 const LicenseLink = () => {
   return (
-    <a className="link-text" href={`https://min.io/compliance?ref=con`}>
+    <a
+      className="link-text"
+      href="https://www.gnu.org/licenses/agpl-3.0.html"
+      rel="noopener"
+      target="_blank"
+    >
       GNU AGPL v3
     </a>
   );

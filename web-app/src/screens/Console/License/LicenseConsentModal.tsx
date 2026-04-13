@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2022 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -72,7 +72,7 @@ const LicenseConsentModal = ({
             marginBottom: "27px",
           }}
         >
-          By using this software, you acknowledge that MinIO software is
+          By using this software, you acknowledge that libreFS software is
           licensed under the <LicenseLink />, for which, the full text can be
           found here:{" "}
           <a
@@ -89,15 +89,15 @@ const LicenseConsentModal = ({
           }}
         >
           Please review the terms carefully and ensure you are in compliance
-          with the obligations of the license. If you are not able to satisfy
-          the license obligations, we offer a commercial license which is
-          available here:{" "}
+          with the obligations of the license. For questions or community
+          support, visit:{" "}
           <a
-            href={`https://min.io/signup?ref=con`}
+            href="https://github.com/libreFS/libreFS/discussions"
             rel="noopener"
+            target="_blank"
             className={"link-text"}
           >
-            https://min.io/signup.
+            github.com/libreFS/libreFS/discussions
           </a>
         </Box>
 

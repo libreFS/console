@@ -1,5 +1,5 @@
-//  This file is part of MinIO Console Server
-//  Copyright (c) 2022 MinIO, Inc.
+//  This file is part of libreFS Console Server
+//  Copyright (c) 2022 libreFS, Inc.
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Affero General Public License as published by
@@ -120,7 +120,7 @@ const LicensePlans = ({ licenseInfo }: IRegisterStatus) => {
 
   const getButton = (link: string, btnText: string, variant: any) => {
     let linkToNav =
-      currentPlan !== "community" ? "https://subnet.min.io" : link;
+      currentPlan !== "community" ? "https://librefs.org/" : link;
     return (
       <Button
         id={`license-action-${link}`}
@@ -214,8 +214,8 @@ const LicensePlans = ({ licenseInfo }: IRegisterStatus) => {
           >
             {getButton(
               element.planType === "commercial"
-                ? `https://min.io/signup`
-                : `https://slack.min.io`,
+                ? `https://librefs.org/`
+                : `https://github.com/libreFS/libreFS/discussions`,
               element.planType === "commercial" ? "Subscribe" : "Join Slack",
               element.planType === "commercial" ? "callAction" : "regular",
             )}
@@ -235,8 +235,8 @@ const LicensePlans = ({ licenseInfo }: IRegisterStatus) => {
             }}
           >
             {getButton(
-              `https://subnet.min.io/`,
-              "Log in to SUBNET",
+              `https://librefs.org/`,
+              "Log in",
               "callAction",
             )}
           </div>
