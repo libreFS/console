@@ -34,7 +34,7 @@ import (
 var serverCmd = cli.Command{
 	Name:    "server",
 	Aliases: []string{"srv"},
-	Usage:   "Start MinIO Console server",
+	Usage:   "Start libreFS Console server",
 	Action:  StartServer,
 	Flags: []cli.Flag{
 		cli.StringFlag{

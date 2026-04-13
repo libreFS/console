@@ -97,10 +97,10 @@ func newApp(name string) *cli.App {
 	app := cli.NewApp()
 	app.Name = name
 	app.Version = pkg.Version + " - " + pkg.ShortCommitID
-	app.Author = "MinIO, Inc."
-	app.Usage = "MinIO Console Server"
-	app.Description = `MinIO Console Server`
-	app.Copyright = "(c) 2021 MinIO, Inc."
+	app.Author = "libreFS contributors"
+	app.Usage = "libreFS Console Server"
+	app.Description = `libreFS Console Server`
+	app.Copyright = "(c) 2021 MinIO, Inc. — modifications (c) 2026 libreFS contributors (AGPL-3.0)"
 	app.Compiled, _ = time.Parse(time.RFC3339, pkg.ReleaseTime)
 	app.Commands = commands
 	app.HideHelpCommand = true // Hide `help, h` command, we already have `minio --help`.
