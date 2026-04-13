@@ -1,15 +1,5 @@
 version: "2"
 
-linters-settings:
-  misspell:
-    locale: US
-
-  goheader:
-    values:
-      regexp:
-        copyright-holder: Copyright \(c\) (20\d\d\-20\d\d)|2021|({{year}})
-    template-path: .license.tmpl
-
 formatters:
   enable:
     - goimports
@@ -17,7 +7,7 @@ formatters:
     - gofumpt
 
 linters:
-  disable-all: true
+  default: none
   enable:
     - misspell
     - govet
@@ -28,16 +18,27 @@ linters:
     - unconvert
     - gocritic
     - durationcheck
-
-issues:
-  exclude-use-default: false
-  exclude:
-    - should have a package comment
-    # TODO(y4m4): Remove once all exported ident. have comments!
-    - comment on exported function
-    - comment on exported type
-    - should have comment
-    - use leading k in Go names
-    - comment on exported const
-  exclude-dirs:
-    - api/operations
+  settings:
+    misspell:
+      locale: US
+    goheader:
+      values:
+        regexp:
+          copyright-holder: Copyright \(c\) (20\d\d\-20\d\d)|2021|({{year}})
+      template-path: .license.tmpl
+  exclusions:
+    rules:
+      - text: "should have a package comment"
+        linters: [revive]
+      - text: "comment on exported function"
+        linters: [revive]
+      - text: "comment on exported type"
+        linters: [revive]
+      - text: "should have comment"
+        linters: [revive]
+      - text: "use leading k in Go names"
+        linters: [revive]
+      - text: "comment on exported const"
+        linters: [revive]
+    paths:
+      - api/operations
