@@ -1,0 +1,119 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Go lint ──────────────────────────────────────────────────────────────
+  go-lint:
+    name: Go lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.x'
+          check-latest: true
+          cache: true
+
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v6
+        with:
+          version: latest
+          args: --timeout=5m --config .golangci.yml
+
+  # ── Go tests ─────────────────────────────────────────────────────────────
+  go-test:
+    name: Go tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.x'
+          check-latest: true
+          cache: true
+
+      - name: Run tests
+        run: go test -count=1 ./api/policy/... ./restapi/...
+
+  # ── govulncheck ───────────────────────────────────────────────────────────
+  govulncheck:
+    name: govulncheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.x'
+          check-latest: true
+          cache: true
+
+      - name: Install govulncheck
+        run: go install golang.org/x/vuln/cmd/govulncheck@latest
+
+      - name: Run govulncheck
+        run: govulncheck ./...
+
+  # ── TypeScript typecheck ──────────────────────────────────────────────────
+  frontend-typecheck:
+    name: TypeScript typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: yarn
+          cache-dependency-path: web-app/yarn.lock
+
+      - name: Install dependencies
+        working-directory: web-app
+        run: yarn install
+
+      - name: TypeScript typecheck
+        working-directory: web-app
+        run: node_modules/.bin/tsc --noEmit
+
+  # ── Full build (frontend + Go binary) ────────────────────────────────────
+  build:
+    name: Full build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: yarn
+          cache-dependency-path: web-app/yarn.lock
+
+      - name: Build frontend assets
+        working-directory: web-app
+        run: yarn install && yarn build
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.x'
+          check-latest: true
+          cache: true
+
+      - name: Build console binary
+        run: CGO_ENABLED=0 go build -trimpath --tags=kqueue --ldflags "-s -w" -o console ./cmd/console
