@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -135,17 +135,16 @@ const LoginCallback = () => {
           </CallBackContainer>
         }
         promoHeader={
-          <span style={{ fontSize: 28 }}>High-Performance Object Store</span>
+          <span style={{ fontSize: 28 }}>Community S3-Compatible Object Store</span>
         }
         promoInfo={
           <span style={{ fontSize: 14, lineHeight: 1 }}>
-            MinIO is a cloud-native object store built to run on any
-            infrastructure - public, private or edge clouds. Primary use cases
-            include data lakes, databases, AI/ML, SaaS applications and fast
-            backup & recovery. MinIO is dual licensed under GNU AGPL v3 and
-            commercial license. To learn more, visit{" "}
-            <a href={"https://min.io/?ref=con"} target="_blank" rel="noopener">
-              www.min.io
+            libreFS is a community-maintained fork of libreFS, preserving the
+            full-featured, open-source S3-compatible object store under AGPL-3.0.
+            It includes WebUI, LDAP/OIDC support, and distributed mode — features
+            kept free and open for everyone. To learn more, visit{" "}
+            <a href={"https://librefs.org/"} target="_blank" rel="noopener">
+              librefs.org
             </a>
             .
           </span>

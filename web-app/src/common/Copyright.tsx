@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2021 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -21,7 +21,7 @@ export default function Copyright() {
   return (
     <Box className={"muted"} sx={{ textAlign: "center" }}>
       {"Copyright © "}
-      <a href="https://min.io/?ref=con">MinIO</a> {new Date().getFullYear()}
+      <a href="https://librefs.org/">libreFS contributors</a> {new Date().getFullYear()}
       {"."}
     </Box>
   );

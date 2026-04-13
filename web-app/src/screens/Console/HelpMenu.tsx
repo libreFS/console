@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2023 MinIO, Inc.
+// This file is part of libreFS Console Server
+// Copyright (c) 2023 libreFS, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -195,9 +195,9 @@ const HelpMenu = () => {
       <div style={{ padding: 16 }}>
         <MoreLink
           LeadingIcon={MinIOTierIcon}
-          text={"Visit MinIO Documentation"}
-          link={"https://docs.min.io/?ref=con"}
-          color={"#C5293F"}
+          text={"Visit libreFS Documentation"}
+          link={"https://librefs.org/docs/"}
+          color={"#0ea5e9"}
         />
       </div>
     </Box>
@@ -221,9 +221,9 @@ const HelpMenu = () => {
       <div style={{ padding: 16 }}>
         <MoreLink
           LeadingIcon={MinIOTierIcon}
-          text={"Visit MinIO Videos"}
-          link={"https://resources.min.io/l/library?contentType=video"}
-          color={"#C5293F"}
+          text={"Visit libreFS GitHub"}
+          link={"https://github.com/libreFS/libreFS"}
+          color={"#0ea5e9"}
         />
       </div>
     </Box>
@@ -247,9 +247,9 @@ const HelpMenu = () => {
       <div style={{ padding: 16 }}>
         <MoreLink
           LeadingIcon={MinIOTierIcon}
-          text={"Visit MinIO Blog"}
-          link={"https://blog.min.io/?ref=con"}
-          color={"#C5293F"}
+          text={"Visit librefs.org"}
+          link={"https://librefs.org/"}
+          color={"#0ea5e9"}
         />
       </div>
     </Box>
