@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: libreFS Community Discussions
+    url: https://github.com/libreFS/libreFS/discussions
+    about: Questions, ideas, and general discussion
+  - name: Security vulnerabilities
+    url: https://github.com/libreFS/libreFS/security/advisories/new
+    about: Please report security issues privately, not as public issues

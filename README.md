@@ -15,12 +15,12 @@ A graphical user interface for [libreFS](https://github.com/libreFS/libreFS) —
   - [Install](#install)
     - [Build from source](#build-from-source)
   - [Setup](#setup)
-    - [1. Create a user `console` using `mc`](#1-create-a-user-console-using-mc)
+    - [1. Create a user `console` using `lc`](#1-create-a-user-console-using-lc)
     - [2. Create a policy for `console` with admin access to all resources (for testing)](#2-create-a-policy-for-console-with-admin-access-to-all-resources-for-testing)
     - [3. Set the policy for the new `console` user](#3-set-the-policy-for-the-new-console-user)
   - [Start Console service:](#start-console-service)
   - [Start Console service with TLS:](#start-console-service-with-tls)
-  - [Connect Console to a Minio using TLS and a self-signed certificate](#connect-console-to-a-minio-using-tls-and-a-self-signed-certificate)
+  - [Connect Console to libreFS using TLS and a self-signed certificate](#connect-console-to-librefs-using-tls-and-a-self-signed-certificate)
 - [Contribute to console Project](#contribute-to-console-project)
 
 <!-- markdown-toc end -->
@@ -29,14 +29,13 @@ libreFS Console is a library that provides a management and browser UI overlay f
 
 ## Setup
 
-All `console` needs is a MinIO user with admin privileges and URL pointing to your MinIO deployment.
+All `console` needs is a libreFS user with admin privileges and a URL pointing to your libreFS deployment.
 
-> Note: We don't recommend using MinIO's Operator Credentials
+### 1. Create a user `console` using `lc`
 
-### 1. Create a user `console` using `mc`
 
 ```bash
-mc admin user add myminio/
+lc admin user add myserver/
 Enter Access Key: console
 Enter Secret Key: xxxxxxxx
 ```
@@ -70,13 +69,13 @@ EOF
 ```
 
 ```sh
-mc admin policy create myminio/ consoleAdmin admin.json
+lc admin policy create myserver/ consoleAdmin admin.json
 ```
 
 ### 3. Set the policy for the new `console` user
 
 ```sh
-mc admin policy attach myminio consoleAdmin --user=console
+lc admin policy attach myserver consoleAdmin --user=console
 ```
 
 > NOTE: Additionally, you can create policies to limit the privileges for other `console` users, for example, if you
@@ -135,7 +134,7 @@ export CONSOLE_PBKDF_PASSPHRASE=SECRET
 # Required to encrypt JWT payload
 export CONSOLE_PBKDF_SALT=SECRET
 
-# MinIO Endpoint
+# libreFS server endpoint
 export CONSOLE_MINIO_SERVER=http://localhost:9000
 ```
 
@@ -180,9 +179,9 @@ Following tree structure is expected for supporting multiple domains:
 
 ```
 
-## Connect Console to a Minio using TLS and a self-signed certificate
+## Connect Console to libreFS using TLS and a self-signed certificate
 
-Copy the MinIO `ca.crt` under `~/.console/certs/CAs`, then:
+Copy the libreFS `ca.crt` under `~/.console/certs/CAs`, then:
 
 ```sh
 export CONSOLE_MINIO_SERVER=https://localhost:9000
@@ -212,6 +211,6 @@ the `CONSOLE_DEBUG_LOGLEVEL` environment variable to one of the following values
 
 The detailed logging also includes all request and response headers (if any).
  
-# Contribute to console Project
+# Contribute to libreFS Console
 
-Please follow console [Contributor's Guide](https://github.com/minio/console/blob/master/CONTRIBUTING.md)
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
