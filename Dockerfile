@@ -23,7 +23,13 @@ RUN go mod download
 # Copy source + pre-built frontend assets (web-app/build/ must exist)
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=linux \
+# Declared without defaults so docker buildx injects the correct target values.
+# A default value (e.g. ARG TARGETARCH=amd64) would override the injection and
+# always produce an amd64 binary regardless of the requested platform.
+ARG TARGETOS
+ARG TARGETARCH
+
+RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} \
     go build -trimpath --tags=kqueue --ldflags "-s -w" \
     -o /console ./cmd/console
 
