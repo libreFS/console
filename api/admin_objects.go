@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/minio/mc/cmd"
+	"github.com/libreFS/librefs-cli/cmd"
 	"github.com/minio/minio-go/v7"
 )
 

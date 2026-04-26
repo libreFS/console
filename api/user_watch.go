@@ -24,7 +24,7 @@ import (
 	"regexp"
 	"strings"
 
-	mc "github.com/minio/mc/cmd"
+	mc "github.com/libreFS/librefs-cli/cmd"
 	"github.com/minio/websocket"
 )
 

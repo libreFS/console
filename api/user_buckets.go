@@ -28,8 +28,8 @@ import (
 	"github.com/minio/minio-go/v7"
 
 	"github.com/minio/madmin-go/v3"
-	"github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
+	"github.com/libreFS/librefs-cli/cmd"
+	"github.com/libreFS/librefs-cli/pkg/probe"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/minio/minio-go/v7/pkg/sse"
 	"github.com/minio/minio-go/v7/pkg/tags"

@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
+	mc "github.com/libreFS/librefs-cli/cmd"
+	"github.com/libreFS/librefs-cli/pkg/probe"
 	"github.com/stretchr/testify/assert"
 )
 

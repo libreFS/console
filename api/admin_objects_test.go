@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	mc "github.com/minio/mc/cmd"
+	mc "github.com/libreFS/librefs-cli/cmd"
 	"github.com/minio/minio-go/v7"
 	"github.com/stretchr/testify/assert"
 )

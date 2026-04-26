@@ -34,8 +34,8 @@ import (
 
 	"github.com/go-openapi/swag"
 	"github.com/minio/console/models"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
+	mc "github.com/libreFS/librefs-cli/cmd"
+	"github.com/libreFS/librefs-cli/pkg/probe"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
