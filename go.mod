@@ -20,7 +20,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/jessevdk/go-flags v1.6.1
 	github.com/klauspost/compress v1.18.0
-	github.com/libreFS/librefs-cli v0.0.0-00010101000000-000000000000
+	github.com/libreFS/librefs-cli v0.0.0-20260426191210-5d4802048c0f
 	github.com/minio/cli v1.24.2
 	github.com/minio/highwayhash v1.0.3
 	github.com/minio/kes v0.24.0
@@ -153,5 +153,3 @@ require (
 	google.golang.org/protobuf v1.36.6 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/libreFS/librefs-cli => ../librefs-cli

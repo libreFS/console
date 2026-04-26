@@ -146,6 +146,8 @@ github.com/lestrrat-go/jwx/v2 v2.1.4 h1:uBCMmJX8oRZStmKuMMOFb0Yh9xmEMgNJLgjuKKt4
 github.com/lestrrat-go/jwx/v2 v2.1.4/go.mod h1:nWRbDFR1ALG2Z6GJbBXzfQaYyvn751KuuyySN2yR6is=
 github.com/lestrrat-go/option v1.0.1 h1:oAzP2fvZGQKWkvHa1/SAcFolBEca1oN+mQ7eooNBEYU=
 github.com/lestrrat-go/option v1.0.1/go.mod h1:5ZHFbivi4xwXxhxY9XHDe2FHo6/Z7WWmtT7T5nBBp3I=
+github.com/libreFS/librefs-cli v0.0.0-20260426191210-5d4802048c0f h1:mtwHIV1BZn8qv6VZZm3nDFYRBJGSKioQ95UVOWStCTo=
+github.com/libreFS/librefs-cli v0.0.0-20260426191210-5d4802048c0f/go.mod h1:A9d+bgs2ZDLdHiY6M1sHhiM+xblKYClGiOhBX+Uxx1I=
 github.com/lucasb-eyer/go-colorful v1.2.0 h1:1nnpGOrhyZZuNyfu1QjKiUICQ74+3FNCN69Aj6K7nkY=
 github.com/lucasb-eyer/go-colorful v1.2.0/go.mod h1:R4dSotOR9KMtayYi1e77YzuveK+i7ruzyGqttikkLy0=
 github.com/lufia/plan9stats v0.0.0-20250317134145-8bc96cf8fc35 h1:PpXWgLPs+Fqr325bN2FD2ISlRRztXibcX6e8f5FR5Dc=
