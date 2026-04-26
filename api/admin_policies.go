@@ -248,12 +248,16 @@ func policyMatchesBucket(ctx context.Context, policy *models.Policy, bucket stri
 	}
 	policyStatements := policyData.Statements
 	for i := 0; i < len(policyStatements); i++ {
-		resources := policyStatements[i].Resources
-		if resources.Match(bucket, map[string][]string{}) {
-			return true
-		}
-		if resources.Match(fmt.Sprintf("%s/*", bucket), map[string][]string{}) {
-			return true
+		// Iterate individually so we can skip the bare "*" global wildcard
+		// (ResourceARNAll), which is used for global/admin actions and should
+		// not cause a policy to be considered bucket-specific.
+		for r := range policyStatements[i].Resources {
+			if r.Type == iampolicy.ResourceARNAll {
+				continue
+			}
+			if r.Match(bucket, map[string][]string{}) || r.Match(fmt.Sprintf("%s/*", bucket), map[string][]string{}) {
+				return true
+			}
 		}
 	}
 	return false
