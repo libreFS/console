@@ -23,10 +23,10 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/libreFS/madmin-go/v3"
 	"github.com/minio/console/api/operations"
 	"github.com/minio/console/api/operations/idp"
 	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
 )
 
 var errInvalidIDPType = fmt.Errorf("IDP type must be one of %v", madmin.ValidIDPConfigTypes)

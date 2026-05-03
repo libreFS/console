@@ -21,8 +21,8 @@ import (
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/libreFS/madmin-go/v3"
 	"github.com/minio/console/api/operations"
-	"github.com/minio/madmin-go/v3"
 
 	groupApi "github.com/minio/console/api/operations/group"
 

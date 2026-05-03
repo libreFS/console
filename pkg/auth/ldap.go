@@ -19,7 +19,7 @@ package auth
 import (
 	"net/http"
 
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/libreFS/librefs-go/v7/pkg/credentials"
 )
 
 // GetCredentialsFromLDAP authenticates the user against MinIO when the LDAP integration is enabled

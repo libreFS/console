@@ -25,8 +25,8 @@ import (
 	"reflect"
 	"testing"
 
+	iampolicy "github.com/libreFS/pkg/v3/policy"
 	"github.com/minio/console/models"
-	iampolicy "github.com/minio/pkg/v3/policy"
 	"github.com/stretchr/testify/assert"
 )
 

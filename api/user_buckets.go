@@ -25,24 +25,24 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7"
+	minio "github.com/libreFS/librefs-go/v7"
 
-	"github.com/minio/madmin-go/v3"
 	"github.com/libreFS/librefs-cli/cmd"
 	"github.com/libreFS/librefs-cli/pkg/probe"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/sse"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/libreFS/librefs-go/v7/pkg/credentials"
+	"github.com/libreFS/librefs-go/v7/pkg/sse"
+	"github.com/libreFS/librefs-go/v7/pkg/tags"
+	"github.com/libreFS/madmin-go/v3"
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
+	"github.com/libreFS/librefs-go/v7/pkg/policy"
+	"github.com/libreFS/librefs-go/v7/pkg/replication"
+	minioIAMPolicy "github.com/libreFS/pkg/v3/policy"
 	"github.com/minio/console/api/operations"
 	bucketApi "github.com/minio/console/api/operations/bucket"
 	"github.com/minio/console/models"
 	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/minio-go/v7/pkg/policy"
-	"github.com/minio/minio-go/v7/pkg/replication"
-	minioIAMPolicy "github.com/minio/pkg/v3/policy"
 )
 
 func registerBucketsHandlers(api *operations.ConsoleAPI) {

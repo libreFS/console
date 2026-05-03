@@ -39,16 +39,16 @@ import (
 
 	"github.com/google/uuid"
 
+	"github.com/libreFS/librefs-go/v7/pkg/credentials"
 	"github.com/minio/console/pkg/logger"
 	"github.com/minio/console/pkg/utils"
-	"github.com/minio/minio-go/v7/pkg/credentials"
 
 	"github.com/klauspost/compress/gzhttp"
 
+	"github.com/libreFS/pkg/v3/env"
+	"github.com/libreFS/pkg/v3/mimedb"
+	xnet "github.com/libreFS/pkg/v3/net"
 	portal_ui "github.com/minio/console/web-app"
-	"github.com/minio/pkg/v3/env"
-	"github.com/minio/pkg/v3/mimedb"
-	xnet "github.com/minio/pkg/v3/net"
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"

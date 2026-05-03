@@ -26,21 +26,21 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/replication"
-	"github.com/minio/minio-go/v7/pkg/sse"
-	xnet "github.com/minio/pkg/v3/net"
+	"github.com/libreFS/librefs-go/v7/pkg/replication"
+	"github.com/libreFS/librefs-go/v7/pkg/sse"
+	xnet "github.com/libreFS/pkg/v3/net"
 
+	mc "github.com/libreFS/librefs-cli/cmd"
+	"github.com/libreFS/librefs-cli/pkg/probe"
+	minio "github.com/libreFS/librefs-go/v7"
+	"github.com/libreFS/librefs-go/v7/pkg/credentials"
+	"github.com/libreFS/librefs-go/v7/pkg/notification"
+	"github.com/libreFS/librefs-go/v7/pkg/tags"
 	"github.com/minio/console/models"
 	"github.com/minio/console/pkg"
 	"github.com/minio/console/pkg/auth"
 	"github.com/minio/console/pkg/auth/ldap"
 	xjwt "github.com/minio/console/pkg/auth/token"
-	mc "github.com/libreFS/librefs-cli/cmd"
-	"github.com/libreFS/librefs-cli/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/notification"
-	"github.com/minio/minio-go/v7/pkg/tags"
 )
 
 func init() {

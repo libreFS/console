@@ -34,10 +34,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/minio-go/v7"
-
+	minio "github.com/libreFS/librefs-go/v7"
+	"github.com/libreFS/librefs-go/v7/pkg/credentials"
 	"github.com/minio/console/models"
-	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/stretchr/testify/assert"
 )
 

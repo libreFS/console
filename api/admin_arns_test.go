@@ -29,8 +29,8 @@ import (
 	"github.com/minio/console/models"
 
 	"github.com/go-openapi/loads"
+	"github.com/libreFS/madmin-go/v3"
 	"github.com/minio/console/api/operations"
-	"github.com/minio/madmin-go/v3"
 
 	asrt "github.com/stretchr/testify/assert"
 )

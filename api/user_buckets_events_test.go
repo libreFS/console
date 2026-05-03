@@ -23,9 +23,9 @@ import (
 	"testing"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
 	"github.com/libreFS/librefs-cli/pkg/probe"
-	"github.com/minio/minio-go/v7/pkg/notification"
+	"github.com/libreFS/librefs-go/v7/pkg/notification"
+	"github.com/minio/console/models"
 	"github.com/stretchr/testify/assert"
 )
 

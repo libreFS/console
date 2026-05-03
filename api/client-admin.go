@@ -32,10 +32,10 @@ import (
 
 	"github.com/minio/console/pkg/utils"
 
+	"github.com/libreFS/librefs-go/v7/pkg/credentials"
+	"github.com/libreFS/madmin-go/v3"
+	iampolicy "github.com/libreFS/pkg/v3/policy"
 	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	iampolicy "github.com/minio/pkg/v3/policy"
 )
 
 const globalAppName = "MinIO Console"

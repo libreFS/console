@@ -8,7 +8,6 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
     corepack prepare yarn@stable --activate
 
 # Install golangci-lint
-RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | \
-    sh -s -- -b /usr/local/bin
+RUN go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest
 
 WORKDIR /app

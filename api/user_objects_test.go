@@ -33,11 +33,11 @@ import (
 	"github.com/minio/console/api/operations/object"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
 	mc "github.com/libreFS/librefs-cli/cmd"
 	"github.com/libreFS/librefs-cli/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	minio "github.com/libreFS/librefs-go/v7"
+	"github.com/libreFS/librefs-go/v7/pkg/tags"
+	"github.com/minio/console/models"
 	"github.com/stretchr/testify/assert"
 )
 

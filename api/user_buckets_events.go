@@ -22,10 +22,10 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
+	"github.com/libreFS/librefs-go/v7/pkg/notification"
 	"github.com/minio/console/api/operations"
 	bucketApi "github.com/minio/console/api/operations/bucket"
 	"github.com/minio/console/models"
-	"github.com/minio/minio-go/v7/pkg/notification"
 )
 
 func registerBucketEventsHandlers(api *operations.ConsoleAPI) {

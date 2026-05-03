@@ -19,7 +19,7 @@ package ldap
 import (
 	"strings"
 
-	"github.com/minio/pkg/v3/env"
+	"github.com/libreFS/pkg/v3/env"
 )
 
 func GetLDAPEnabled() bool {

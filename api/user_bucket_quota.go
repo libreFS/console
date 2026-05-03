@@ -25,7 +25,7 @@ import (
 	"github.com/minio/console/api/operations"
 	bucektApi "github.com/minio/console/api/operations/bucket"
 
-	"github.com/minio/madmin-go/v3"
+	"github.com/libreFS/madmin-go/v3"
 
 	"github.com/minio/console/models"
 )

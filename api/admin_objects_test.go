@@ -22,7 +22,7 @@ import (
 	"time"
 
 	mc "github.com/libreFS/librefs-cli/cmd"
-	"github.com/minio/minio-go/v7"
+	minio "github.com/libreFS/librefs-go/v7"
 	"github.com/stretchr/testify/assert"
 )
 

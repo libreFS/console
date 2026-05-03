@@ -24,13 +24,13 @@ import (
 
 	xoauth2 "golang.org/x/oauth2"
 
-	"github.com/minio/madmin-go/v3"
+	"github.com/libreFS/madmin-go/v3"
 
-	iampolicy "github.com/minio/pkg/v3/policy"
+	iampolicy "github.com/libreFS/pkg/v3/policy"
 
 	"github.com/minio/console/pkg/auth"
 
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/libreFS/librefs-go/v7/pkg/credentials"
 	"github.com/stretchr/testify/assert"
 )
 

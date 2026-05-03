@@ -21,10 +21,9 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/minio/minio-go/v7"
-
+	minio "github.com/libreFS/librefs-go/v7"
+	"github.com/libreFS/madmin-go/v3"
 	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
 )
 
 var (

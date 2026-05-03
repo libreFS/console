@@ -30,20 +30,20 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7"
+	minio "github.com/libreFS/librefs-go/v7"
 
 	"github.com/minio/console/pkg/utils"
 
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/klauspost/compress/zip"
+	mc "github.com/libreFS/librefs-cli/cmd"
+	"github.com/libreFS/librefs-cli/pkg/probe"
+	"github.com/libreFS/librefs-go/v7/pkg/tags"
+	"github.com/libreFS/pkg/v3/mimedb"
 	"github.com/minio/console/api/operations"
 	objectApi "github.com/minio/console/api/operations/object"
 	"github.com/minio/console/models"
-	mc "github.com/libreFS/librefs-cli/cmd"
-	"github.com/libreFS/librefs-cli/pkg/probe"
-	"github.com/minio/minio-go/v7/pkg/tags"
-	"github.com/minio/pkg/v3/mimedb"
 )
 
 // enum types
