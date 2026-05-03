@@ -25,12 +25,12 @@ import (
 	"testing"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations/system"
-	"github.com/minio/console/models"
+	"github.com/libreFS/console/api/operations/system"
+	"github.com/libreFS/console/models"
 
 	"github.com/go-openapi/loads"
+	"github.com/libreFS/console/api/operations"
 	"github.com/libreFS/madmin-go/v3"
-	"github.com/minio/console/api/operations"
 
 	asrt "github.com/stretchr/testify/assert"
 )

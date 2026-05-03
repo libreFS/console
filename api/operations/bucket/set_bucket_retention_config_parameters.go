@@ -32,7 +32,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/validate"
 
-	"github.com/minio/console/models"
+	"github.com/libreFS/console/models"
 )
 
 // NewSetBucketRetentionConfigParams creates a new SetBucketRetentionConfigParams object

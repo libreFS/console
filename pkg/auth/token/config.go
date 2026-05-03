@@ -19,8 +19,8 @@ package token
 import (
 	"time"
 
+	"github.com/libreFS/console/pkg/auth/utils"
 	"github.com/libreFS/pkg/v3/env"
-	"github.com/minio/console/pkg/auth/utils"
 )
 
 // GetConsoleSTSDuration returns the default session duration for the STS requested tokens (defaults to 12h)

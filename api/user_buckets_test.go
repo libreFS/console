@@ -25,16 +25,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/console/pkg/utils"
+	"github.com/libreFS/console/pkg/auth/token"
+	"github.com/libreFS/console/pkg/utils"
 
 	"github.com/go-openapi/swag"
+	"github.com/libreFS/console/models"
 	"github.com/libreFS/librefs-cli/pkg/probe"
 	minio "github.com/libreFS/librefs-go/v7"
 	"github.com/libreFS/librefs-go/v7/pkg/sse"
 	"github.com/libreFS/librefs-go/v7/pkg/tags"
 	"github.com/libreFS/madmin-go/v3"
-	"github.com/minio/console/models"
 	"github.com/stretchr/testify/assert"
 )
 

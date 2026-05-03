@@ -28,7 +28,7 @@ import (
 
 	iampolicy "github.com/libreFS/pkg/v3/policy"
 
-	"github.com/minio/console/pkg/auth"
+	"github.com/libreFS/console/pkg/auth"
 
 	"github.com/libreFS/librefs-go/v7/pkg/credentials"
 	"github.com/stretchr/testify/assert"

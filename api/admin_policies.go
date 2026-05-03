@@ -24,16 +24,16 @@ import (
 	"sort"
 	"strings"
 
+	bucketApi "github.com/libreFS/console/api/operations/bucket"
+	policyApi "github.com/libreFS/console/api/operations/policy"
 	s3 "github.com/libreFS/librefs-go/v7"
-	bucketApi "github.com/minio/console/api/operations/bucket"
-	policyApi "github.com/minio/console/api/operations/policy"
 
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/libreFS/console/api/operations"
+	"github.com/libreFS/console/models"
 	iampolicy "github.com/libreFS/pkg/v3/policy"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/models"
 
-	policies "github.com/minio/console/api/policy"
+	policies "github.com/libreFS/console/api/policy"
 )
 
 func registersPoliciesHandler(api *operations.ConsoleAPI) {

@@ -23,10 +23,10 @@ import (
 	"net/http"
 
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/libreFS/console/api/operations"
+	logApi "github.com/libreFS/console/api/operations/logging"
+	"github.com/libreFS/console/models"
 	iampolicy "github.com/libreFS/pkg/v3/policy"
-	"github.com/minio/console/api/operations"
-	logApi "github.com/minio/console/api/operations/logging"
-	"github.com/minio/console/models"
 )
 
 func registerLogSearchHandlers(api *operations.ConsoleAPI) {

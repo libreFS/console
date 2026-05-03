@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/libreFS/console/pkg/logger/color"
+	"github.com/libreFS/console/pkg/logger/message/log"
 	c "github.com/libreFS/pkg/v3/console"
-	"github.com/minio/console/pkg/logger/color"
-	"github.com/minio/console/pkg/logger/message/log"
 )
 
 // Logger interface describes the methods that need to be implemented to satisfy the interface requirements.

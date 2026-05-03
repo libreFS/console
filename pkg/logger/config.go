@@ -23,9 +23,9 @@ import (
 
 	"github.com/google/uuid"
 
+	"github.com/libreFS/console/pkg/logger/config"
+	"github.com/libreFS/console/pkg/logger/target/http"
 	"github.com/libreFS/pkg/v3/env"
-	"github.com/minio/console/pkg/logger/config"
-	"github.com/minio/console/pkg/logger/target/http"
 )
 
 // NewConfig - initialize new logger config.

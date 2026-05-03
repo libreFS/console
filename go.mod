@@ -1,4 +1,4 @@
-module github.com/minio/console
+module github.com/libreFS/console
 
 go 1.26
 

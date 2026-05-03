@@ -21,9 +21,9 @@ import (
 	"errors"
 	"strings"
 
+	"github.com/libreFS/console/models"
 	minio "github.com/libreFS/librefs-go/v7"
 	"github.com/libreFS/madmin-go/v3"
-	"github.com/minio/console/models"
 )
 
 var (

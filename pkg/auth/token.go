@@ -32,9 +32,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/libreFS/console/models"
+	"github.com/libreFS/console/pkg/auth/token"
 	"github.com/libreFS/librefs-go/v7/pkg/credentials"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/token"
 	"github.com/secure-io/sio-go/sioutil"
 	"golang.org/x/crypto/chacha20"
 	"golang.org/x/crypto/chacha20poly1305"

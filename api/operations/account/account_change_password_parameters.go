@@ -31,7 +31,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"github.com/minio/console/models"
+	"github.com/libreFS/console/models"
 )
 
 // NewAccountChangePasswordParams creates a new AccountChangePasswordParams object

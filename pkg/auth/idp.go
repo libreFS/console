@@ -19,8 +19,8 @@ package auth
 import (
 	"context"
 
+	"github.com/libreFS/console/pkg/auth/idp/oauth2"
 	"github.com/libreFS/librefs-go/v7/pkg/credentials"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
 	xoauth2 "golang.org/x/oauth2"
 )
 

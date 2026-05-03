@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/libreFS/console/models"
 )
 
 // DeleteObjectRetentionHandlerFunc turns a function with the right signature into a delete object retention handler

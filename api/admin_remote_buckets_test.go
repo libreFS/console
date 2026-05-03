@@ -24,13 +24,13 @@ import (
 	"os"
 	"testing"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/libreFS/console/pkg/utils"
 
 	"github.com/go-openapi/swag"
+	"github.com/libreFS/console/api/operations"
+	bucketApi "github.com/libreFS/console/api/operations/bucket"
+	"github.com/libreFS/console/models"
 	"github.com/libreFS/madmin-go/v3"
-	"github.com/minio/console/api/operations"
-	bucketApi "github.com/minio/console/api/operations/bucket"
-	"github.com/minio/console/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

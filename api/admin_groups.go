@@ -21,12 +21,12 @@ import (
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/libreFS/console/api/operations"
 	"github.com/libreFS/madmin-go/v3"
-	"github.com/minio/console/api/operations"
 
-	groupApi "github.com/minio/console/api/operations/group"
+	groupApi "github.com/libreFS/console/api/operations/group"
 
-	"github.com/minio/console/models"
+	"github.com/libreFS/console/models"
 )
 
 func registerGroupsHandlers(api *operations.ConsoleAPI) {

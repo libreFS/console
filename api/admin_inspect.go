@@ -25,10 +25,10 @@ import (
 
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/libreFS/console/api/operations"
+	inspectApi "github.com/libreFS/console/api/operations/inspect"
+	"github.com/libreFS/console/models"
 	"github.com/libreFS/madmin-go/v3"
-	"github.com/minio/console/api/operations"
-	inspectApi "github.com/minio/console/api/operations/inspect"
-	"github.com/minio/console/models"
 	"github.com/secure-io/sio-go"
 )
 

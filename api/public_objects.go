@@ -27,9 +27,9 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
+	"github.com/libreFS/console/api/operations"
+	"github.com/libreFS/console/api/operations/public"
 	xnet "github.com/libreFS/pkg/v3/net"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/api/operations/public"
 )
 
 func registerPublicObjectsHandlers(api *operations.ConsoleAPI) {

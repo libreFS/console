@@ -27,8 +27,8 @@ import (
 	"github.com/go-openapi/swag"
 	"github.com/stretchr/testify/assert"
 
+	"github.com/libreFS/console/models"
 	"github.com/libreFS/madmin-go/v3"
-	"github.com/minio/console/models"
 )
 
 const (

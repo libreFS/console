@@ -25,10 +25,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/libreFS/console/pkg/auth/idp/oauth2"
 	xcerts "github.com/libreFS/pkg/v3/certs"
 	"github.com/libreFS/pkg/v3/env"
 	xnet "github.com/libreFS/pkg/v3/net"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
 )
 
 var (

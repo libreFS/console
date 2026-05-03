@@ -29,9 +29,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/libreFS/console/pkg/utils"
 
-	"github.com/minio/console/pkg/logger/message/audit"
+	"github.com/libreFS/console/pkg/logger/message/audit"
 )
 
 // ResponseWriter - is a wrapper to trap the http response status code.

@@ -24,13 +24,13 @@ import (
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/libreFS/console/api/operations"
+	accountApi "github.com/libreFS/console/api/operations/account"
+	bucketApi "github.com/libreFS/console/api/operations/bucket"
+	userApi "github.com/libreFS/console/api/operations/user"
+	"github.com/libreFS/console/models"
 	"github.com/libreFS/madmin-go/v3"
 	iampolicy "github.com/libreFS/pkg/v3/policy"
-	"github.com/minio/console/api/operations"
-	accountApi "github.com/minio/console/api/operations/account"
-	bucketApi "github.com/minio/console/api/operations/bucket"
-	userApi "github.com/minio/console/api/operations/user"
-	"github.com/minio/console/models"
 )
 
 // Policy evaluated constants

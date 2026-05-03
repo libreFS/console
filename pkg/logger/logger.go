@@ -33,12 +33,12 @@ import (
 
 	"github.com/libreFS/pkg/v3/env"
 
+	"github.com/libreFS/console/pkg"
 	"github.com/libreFS/pkg/v3/certs"
-	"github.com/minio/console/pkg"
 
+	"github.com/libreFS/console/pkg/logger/config"
+	"github.com/libreFS/console/pkg/logger/message/log"
 	"github.com/libreFS/librefs-go/v7/pkg/set"
-	"github.com/minio/console/pkg/logger/config"
-	"github.com/minio/console/pkg/logger/message/log"
 	"github.com/minio/highwayhash"
 )
 

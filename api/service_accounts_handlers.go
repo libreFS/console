@@ -23,12 +23,12 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/libreFS/console/api/operations"
+	saApi "github.com/libreFS/console/api/operations/service_account"
+	userApi "github.com/libreFS/console/api/operations/user"
+	"github.com/libreFS/console/models"
 	"github.com/libreFS/madmin-go/v3"
 	iampolicy "github.com/libreFS/pkg/v3/policy"
-	"github.com/minio/console/api/operations"
-	saApi "github.com/minio/console/api/operations/service_account"
-	userApi "github.com/minio/console/api/operations/user"
-	"github.com/minio/console/models"
 )
 
 func registerServiceAccountsHandlers(api *operations.ConsoleAPI) {

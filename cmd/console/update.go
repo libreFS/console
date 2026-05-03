@@ -30,8 +30,8 @@ import (
 
 	"github.com/blang/semver/v4"
 	"github.com/cheggaaa/pb/v3"
+	"github.com/libreFS/console/pkg"
 	"github.com/minio/cli"
-	"github.com/minio/console/pkg"
 	"github.com/minio/selfupdate"
 )
 

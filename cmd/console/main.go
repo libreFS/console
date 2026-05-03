@@ -23,11 +23,11 @@ import (
 	"sort"
 	"time"
 
+	"github.com/libreFS/console/pkg"
 	"github.com/libreFS/pkg/v3/console"
 	"github.com/libreFS/pkg/v3/trie"
 	"github.com/libreFS/pkg/v3/words"
 	"github.com/minio/cli"
-	"github.com/minio/console/pkg"
 )
 
 // Help template for Console.

@@ -24,9 +24,9 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/libreFS/console/pkg/auth/token"
 	"github.com/libreFS/librefs-go/v7/pkg/set"
 	"github.com/libreFS/pkg/v3/env"
-	"github.com/minio/console/pkg/auth/token"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/oauth2"
 	xoauth2 "golang.org/x/oauth2"
